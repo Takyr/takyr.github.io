@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+          <meta charset="utf-8">
+        <title>Murach's Java Servlets and JSP</title>
+        <link rel="stylesheet" href="styles/survey.css">
+        
+         <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+ li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #04AA6D;
+}
+</style>
+      
+    </head>
+    <body>
+        
+    
+    
+<div class="header">
+  <h1>Group 18 - LTWeb</h1>
+  <p>Gaming Merchandise Shop</p>
+</div>
+
+    
+    
+<!-- The navigation menu -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+   <a href="about.html">About Us</a>
+
+  <div class="subnav">
+    <button class="subnavbtn">LABs▾ <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="index2.html">ch04_ex1_survey</a>
+      <a href="index.jsp">ch05_ex1_email</a>
+      <a href="#package">ch05_ex2_email</a>
+      <a href="#express">ch06_ex1_email</a>
+      <a href="index2.html">ch06_ex2_survey</a>
+      <a href="index.jsp">ch07_ex1_download</a>
+      <a href="#package">ch07_ex2_download</a>
+      <a href="#express">ch07_ex3_cart</a>
+      <a href="index2.html">ch08_ex1_email</a>
+      <a href="index.jsp">ch09_ex1_download</a>
+      <a href="#package">ch09_ex2_cart</a>
+      
+      
+      
+      
+      
+    </div>
+  </div>
+   
+    <a href="about.html">Final Project</a>
+</div>   
+    
+    
+        
+        
+        <form action="survey" method="post">
+            <img src="https://cdn.discordapp.com/attachments/697942365146578967/1027426717029122098/murachlogo.jpg" alt="logo" />
+            <h1>Survey</h1>
+            <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+            
+            <h2>Your information:</h2>
+            <label>First Name</label>
+            <input type="text" name="firstName" required><br>
+            <label>Last Name</label>
+            <input type="text" name="lastName" required><br>
+            <label>Email</label>
+            <input type="email" name="email" required><br>
+            <label>Date of Birth</label>
+            <input type="text" name="DoB"><br>
+
+            <h2>How did you hear about us?</h2>
+            <p><input type=radio name="heardFrom" value="Social Media">Social Media
+                <input type=radio name="heardFrom" value="Search Engine" checked>Search engine
+               <input type=radio name="heardFrom" value="Friend">Word of mouth
+               <input type=radio name="heardFrom" value="Other">Other</p>
+
+            <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+            <p><input type="checkbox" name="wantsUpdates" >YES, I'd like that.</p>
+            <p><input type="checkbox" name="emailOk" >YES, please send me email announcements.</p>
+            
+
+            <p>Please contact me by:
+                <select name="contactVia">
+                    <option value="Both" selected>Email or postal mail</option>
+                    <option value="Email">Email only</option>
+                    <option value="Postal Mail">Postal mail only</option>
+                </select>
+            </p>
+
+            <input type=submit value="Submit">
+        </form>
+    </body>
+</html>
